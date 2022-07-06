@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @thing.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @thing.description %>
+</p>
+
+
+<%= (render file: 'public/doug.html').html_safe if @thing.name =~ /doug/i %>
+
+<%= link_to 'Edit', edit_thing_path(@thing) %> |
+<%= link_to 'Back', things_path %>
