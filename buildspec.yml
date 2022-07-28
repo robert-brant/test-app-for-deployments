@@ -2,12 +2,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      ruby: 2.6
+      ruby: 2.7.4
     commands:
       - echo "installing Bundler..."
       - echo gem install bundler
       - bundle install
-    pre-build:
+    pre_build:
       commands:
         - echo "preparing database to run tests..."
         - bundle exec rails db:create RAILS_ENV=test
