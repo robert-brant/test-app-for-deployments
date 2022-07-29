@@ -32,7 +32,7 @@ phases:
 #    run-as: Linux-user-name
     on-failure: ABORT
     runtime-versions:
-      ruby: 2.6
+      ruby: 2.7
     commands:
       - echo "installing Bundler"
       - bundle install
